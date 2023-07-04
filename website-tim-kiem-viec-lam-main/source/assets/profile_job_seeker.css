@@ -1,0 +1,471 @@
+/* Profile */
+#profile-job_seeker{
+    /* display: none; */
+    width: 100%;
+    margin: auto;
+    background-color: var(--background-color);
+}
+
+.main-profile{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 5%;  
+}
+
+/* Profile Navigation */
+.navigation-profile{
+    width: 29%;
+}
+
+.title-container_page{
+    font-size: 140%;
+    color: var(--main-color);
+}
+
+.menu-profile{
+    margin: 10% 0px;
+    border: 1px solid var(--box-shadow-color);
+    border-radius: 2px;
+    background: var(--element-main-color);
+    padding: 8%;
+    transition: all 0.2s ease;
+}
+
+.menu-profile li{
+    list-style: none;
+    font-size: 120%;
+}
+
+.menu-profile li a{
+    color: var(--main-color);
+    line-height: 200%;
+    transition: all 0.3s ease;
+}
+
+.menu-profile li a:hover{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* My Prodile */
+.profile-employer,
+.my-profile{
+    position: relative;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    background: var(--element-main-color);
+    transition: all 0.3s ease;
+}
+
+.avatar-background{
+    width: 100%;
+    /* height: %; */
+}
+
+.icon-edit{
+    color: var(--box-shadow-color);
+    float: right;
+    padding: 1%;
+}
+.icon-edit:hover{
+    color: var(--main-color);
+}
+
+.img-intro_address_detail,
+.logo-intro_img,
+.avatar-profile_employer,
+.avatar-profile{
+    position: absolute;
+    top: 6%;
+    left: 25%;
+    width: 50%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--box-shadow-color);
+    text-align: center;
+    background: var(--element-main-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-upload::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+.btn-upload::before{
+    width: 100%;
+    content: "Upload ảnh";
+    color: black;
+    display: inline-block;
+    user-select: none;
+    text-align: center;
+    line-height: 150%;
+    font-size: 90%;
+}
+
+.btn-upload{
+    width: 83%; 
+    color: transparent;
+    margin: 25% auto 10%;
+    background: var(--press-box-shadow-color);
+}
+
+.btn-cancel{
+    font-size: 90%;
+    /* width: 33.3%;
+     */
+    text-align: center;
+    line-height: 150%;
+    color: var(--main-color);
+    float: left;
+    margin: 3%;
+    background: none;
+    border: 2px solid var(--main-color);
+}
+
+.btn-save{
+    font-size: 90%;
+    width: 33.3%;
+    text-align: center;
+    line-height: 150%;
+    color: var(--white-color);
+    background: var(--press-box-shadow-color);  
+    float: right;
+    margin: 3%;
+}
+
+.avatar-profile .icon-edit{
+    text-align: right;
+}
+
+.btn-cancel:hover,
+.btn-upload:hover::before,
+.btn-save:hover,
+.btn-upload:hover{
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+.detail-profile{
+    width: 93%;
+    /* height: 55%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3.3%;
+    margin-top: 5%;
+    background: var(--background-color);
+}
+
+.detail-profile div{
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 2%;
+    font-size: 100%;
+}
+
+.detail-profile div label{
+    margin: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.detail-profile .btns{
+    margin: 0px;
+}
+
+.btns:hover a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.intro-company div input,
+.detail-profile div select,
+.detail-profile div input{
+    width: 65%;
+    font-size: 90%;
+    padding: 1%;
+    outline: none;
+    border: 1px solid var(--box-shadow-color);
+    border-radius: 2px;
+    box-shadow: 1px 1px var(--box-shadow-color);
+}
+
+.detail-profile i{
+    text-align: right;
+}
+
+.detail-profile .btn-save,
+.detail-profile .btn-cancel{
+    justify-content: center;
+}
+
+
+/*------------------------------------- List CV  and list Candidate---------------------------------*/
+.list-cv{
+    position: relative;
+    width: 100%;
+    background: var(--element-main-color);
+    padding: 2.8%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-cv{
+    width: 92%;
+    font-size: 100%;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--main-color);
+}
+
+.title-cv li{
+    width: 18%;
+}
+
+.cvs{
+    height: 400px;
+    width: 100%;
+    background: var(--background-color);
+    padding: 1.8%;
+    overflow: auto;
+}
+
+.cv{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid var(--box-shadow-color);
+    box-shadow: 2px 2px var(--box-shadow-color);
+    padding: 1.3%;
+    transition: all 0.3s ease;
+    margin-bottom: 2.5%;
+}
+
+.cv:hover{
+    transform: translateY(-3px);
+    box-shadow: 2.5px 2.5px var(--box-shadow-color);
+}
+
+.cv>div,
+.cv>a{
+    width: 15%;
+}
+
+.img-cv{
+    width: 100%;
+    height: 100%;
+}
+
+.info-cv span input{
+    width: 100%;
+    padding: 1px;
+    border: none;
+    font-size: 130%;
+    color: var(--main-color);
+}
+
+.info-cv p textarea{
+    width: 100%;
+    padding: 1px;
+    font-size: 90%;
+    border: none;
+}
+
+.status-cv,
+.company-cv{
+    color: var(--main-color);
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-cv:hover{
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.edit-cv,
+.view-cv{
+    display: flex;
+    text-align: right;
+    font-size: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.detail-profile .edit,
+.edit{
+    display: none;   
+}
+
+.btn-add{
+    font-size: 90%;
+    text-align: center;
+    line-height: 150%;
+    color: var(--white-color);
+    background: var(--press-box-shadow-color);  
+    float: right;
+    margin: 3%;
+}
+
+.btn-add:hover{
+    background: var(--main-color);
+}
+
+/* Modal add Cv */
+.modal_modal_post,
+#modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--modal-color);
+    display: none;
+    z-index: 1;
+}
+
+/* view cv modal */
+.modal-view-cv{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--element-main-color);    
+    padding: 3%;
+    border: 1px solid var(--box-shadow-color);
+    border-radius: 2px;
+    box-shadow: 2px 2px var(--box-shadow-color);
+    animation: display_vertical 0.3s ease;
+    overflow: auto;
+    z-index: 1;
+    display: none;
+}
+
+.modal-view-cv .img-cv{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+
+/* add cv modal */
+#modal .cvs,
+.modal-add_cv{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 55%;
+    display: flex;
+    background: var(--background-color);    
+    padding: 3%;
+    border: 1px solid var(--box-shadow-color);
+    border-radius: 2px;
+    box-shadow: 2px 2px var(--box-shadow-color);
+    animation: display_vertical 0.3s ease;
+    display: none;
+}
+
+.img-add_cv{
+    background: var(--element-main-color);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-add_cv div,
+.img-add_cv a{
+    text-align: center;
+}
+
+.img-add_cv a{
+    width: 83%; 
+    font-size: 90%;
+    line-height: 150%;
+    margin: 3%;
+    padding: 5% 10%;
+    border: 1px solid var(--main-color);
+}
+
+.detail-and-requirement{
+    width: 100%;
+    overflow: auto;
+}
+
+.decription-btn-modal_cv{
+    padding: 0px 0px 0px 3.7%;
+}
+
+.decription-add span{
+    font-size: 100%;
+    color: var(--main-color);   
+}
+
+.decription-add input, 
+.decription-add textarea{
+    padding: 2%;
+    outline: none;
+    width: 100%;
+    border: 1px solid var(--main-color);
+}
+
+.decription-btn-modal_cv .btn{
+    margin: 0px;
+}
+
+.img-add_cv{
+    background: var(--element-main-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* post modal */
+.modal-recruiment,
+.modal-example-post,
+.modal-post{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 55%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: var(--background-color);    
+    padding: 3%;
+    border: 1px solid var(--box-shadow-color);
+    border-radius: 2px;
+    box-shadow: 2px 2px var(--box-shadow-color);
+    animation: display_vertical 0.3s ease;
+    display: none;
+}
+
+
+.modal-recruiment{
+    justify-content: space-between;
+}
+
+.modal-post .post-company{
+    flex-wrap: nowrap;
+}
+
+textarea{
+    font-size: 100%;
+    padding: 2%;
+}
+
+/* Recruiment modal */

@@ -1,0 +1,47 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --gray-color: #F4F3F3;
+    --main-color: #451DA0;
+    --link-color: #3f01d0;
+    --header-color: #5819e9; 
+    --bg-gray-color: #f1f2f6;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+html {
+    font-size: 72.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/*
+    Css for input_form when an exception occurs 
+*/
+.invalid>input {
+    border: 1px solid red;
+}
+
+.invalid>span {
+    color: red;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-with {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}

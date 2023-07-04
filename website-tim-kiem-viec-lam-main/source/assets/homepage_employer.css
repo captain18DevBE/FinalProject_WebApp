@@ -1,0 +1,256 @@
+.candidates-posts.container-page{
+    padding: 0;
+}
+
+.candidate-post{
+    width: 100%;
+    height: 100%;
+    background: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.candidates{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* --------------Candidate side------------------------*/
+.candidates-all,
+.candidates-new{
+    width: 100%;
+    height: 48%;
+    background: var(--element-main-color);
+    padding: 4%;
+}
+
+.title-content{
+    font-size: 120%;
+}
+
+.container-candidate{
+    width: 100%;
+    height: 300px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.tag-candidate{
+    width: 90%;
+    display: flex;
+    text-align: left;
+    background: var(--box-shadow-color);
+    box-shadow: 2px 2px var(--box-shadow-color);
+    margin: 2% 2%;
+    transition: all 0.3s ease;
+}
+
+.tag-candidate:hover{
+    transform: translateY(-3px);
+}
+
+.img-candidate{
+    position: relative;
+    width: 50%;
+}
+
+.tag-candidate:hover .candidate-detail{
+    display: block;
+}
+
+.candidate-detail{
+    position: absolute;
+    width: 100%;
+    display: none;
+    bottom: 0;
+    background: var(--box-shadow-color);
+    transition: all 0.3s ease;
+}
+
+.info-candidate{
+    padding: 3.5%;
+}
+
+.info-candidate table{
+    width: 100%;
+    text-align: center;
+}
+
+.name-candidate{
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 140%;
+}
+
+.decription-candidate{
+    font-size: 110%;
+    line-height: 200%;
+}
+
+
+
+/*-------------------------- Post side -----------------------*/
+
+.post{
+    width: 37%;
+    background: var(--element-main-color);
+    padding: 4%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-post-side,
+.title-post-employer{
+    font-size: 120%;
+    color: var(--main-color);
+}
+
+.detail-sub-info-employer{
+    font-size: 100%;
+    margin: 2% 0px;
+    line-height: 200%;
+}
+
+.post-info-employer .btn-detail{
+    padding: 2%;
+    margin-top: 5%;
+    float:right;
+    transition: all 0.1s ease;
+}
+
+/*-------------------------------- candidate-suggest ---------------*/
+.candidate-suggest{
+    width: 100%;
+    height: 100%;
+    background: var(--background-color);
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.container-candidate-suggest{
+    background: var(--element-main-color);
+    padding: 4%;
+}
+
+.candidate-suggest .container-candidate{
+    height: 400px;
+}
+
+.intro-content{
+    background: var(--element-main-color);
+    padding: 1% 4%;
+}
+
+.intro-content>div{
+    margin: 3% 0%;
+}
+
+.info-content,
+.intro-address{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-name{
+    font-size: 120%;
+    color: var(--main-color);
+    text-align: left;
+    line-height: 200%;
+}
+
+.intro-address-company,
+.detail_info-content{
+    width: 65%;
+    overflow: auto;
+}
+
+.img-intro-address,
+.logo-intro{
+    width: 25%;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.img-intro_address_detail,
+.logo-intro_img{
+    top: 4%;
+    left: 0%;
+    width: 100%;  
+    aspect-ratio: 1/1;   
+    height: 100%;
+    display: flex;
+    background-size: cover;
+}
+
+.img-intro_address_detail .icon-edit,
+.logo-intro_img .icon-edit{
+    text-align: right;
+}
+
+.service-company .fields-company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-company div input{
+    width: 100%;
+}
+
+.some-img_company{
+    background: var(--white-color);
+    padding: 1.8%;
+}
+
+.some-img{
+    height: 260px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+
+.some-img .container{
+    height: 100%;
+}
+
+.fields-company select{
+    display: none;
+}
+
+.image-company_posted{
+    height: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    border: 1px solid var(--box-shadow-color);
+    box-shadow: 2px 2px var(--box-shadow-color);
+    transition: all ease 0.3s;
+    margin: 3% 0%;
+}
+
+.image-company_posted:hover{
+    transform: translateY(-3px);
+}
+
+.image-company_posted .icon-trash{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    display: none;
+}
+
+.image-company_posted:hover .icon-trash{
+    display: block;
+}
+
+.icon-trash:hover{
+    color: var(--main-color);
+    font-size: 150%;
+}

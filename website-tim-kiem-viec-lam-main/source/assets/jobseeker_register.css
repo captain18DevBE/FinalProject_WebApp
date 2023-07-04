@@ -1,0 +1,193 @@
+.body {
+    display: flex;
+}
+
+
+
+/* Css for register form */
+.register {
+    width: 50%;
+    /* display: flex; */
+
+}   
+.register__header {
+    width: 100%;
+    height: 110px;
+    background-color: var(--white-color);
+}
+
+.register__header--logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    aspect-ratio: 2.5/1;
+    height: 60px;
+}
+
+.register__header__intro {
+    margin-top: 10px;
+    width: 100%;
+    color: var(--main-color);
+    text-align: center;
+    font-size: small;
+}
+
+/* Code Css for form input */
+.register__body {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.register__body--form {
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.register__form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    
+}
+label {
+    width: calc(100% - 200px);
+}
+
+
+.form-message {
+    align-self: start;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.form-group {
+    display: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register__form-input {
+    width: calc(100% - 200px);
+    height: 38px;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    min-width: 300px;
+}
+
+.register__form-submit {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.register__form-submit:hover {
+    background-color: var(--link-color);
+}
+
+.register__body--link-login>h3>a:hover {
+    color: var(--link-color);
+}
+
+.register__body__link-login {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+    color: var(--text-color);
+}
+
+.register__body__link-login--app {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.register__body__link-login--app>div {
+    width: 30%;
+    height: 38px;
+
+}
+
+.register-bottom--link-account {
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+}
+
+.register-bottom--link-account>button {
+    display: inline-flex;
+    line-height: 25px;
+    font-size: larger;
+    background-color: var(--gray-color);
+    color: var(--text-color);
+    height: 40px;
+}
+
+.register-bottom--link-account>button>img {
+    width: 30px;
+    height: 30px;
+}
+
+.register-bottom--link-account>button>span {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: small;
+    color: var(--white-color);
+}
+
+.btn--google:hover {
+    background-color:#ea4335 !important;
+}
+.btn--facebook:hover {
+    background-color:#3d6dc5 !important;
+}
+
+/* Css for marketing form */
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    .marketing {
+        display: none;
+    }
+    .register {
+        width: 100%;
+    }
+  }
+
+.marketing {
+    width: 50%;
+    background-color: var(--gray-color);
+    
+}
+
+.marketing__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.marketing__header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 110px;
+    justify-content: center;
+}
+
+.marketing__header--logo-news {
+    position: absolute;
+    top: -50px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.marketing__slider {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+}
+

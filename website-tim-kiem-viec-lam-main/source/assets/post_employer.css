@@ -1,0 +1,133 @@
+/* Profile of Employer */
+#profile-employer{
+    /* display: none; */
+    width: 100%;
+    margin: auto;
+    background-color: var(--background-color);
+}
+
+.profile-employer{
+    width: 100%;
+}
+
+.avatar-profile_employer{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--box-shadow-color);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: var(--press_white_btn-color);
+    justify-content: center;
+}
+
+.avatar-profile_employer-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.avatar-profile_employer .icon-edit{
+    text-align: right;
+}
+
+/* Posts */
+.manage-posts .detail-profile{
+    margin: 5% 0px;
+    width: 100%;
+}
+
+.detail-profile-employer{
+    /* width: 93%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5% 0px;
+    padding: 3.3%;
+    background: var(--background-color);
+}
+
+.detail-profile-employer>div{
+    margin-bottom: 2%;
+}
+
+.list-post{
+    background: var(--element-main-color);
+    padding: 3.3%;
+}
+
+.title-post{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-add:hover{
+    cursor: pointer;
+}
+
+.title-post span{
+    font-size: 130%;
+    color: var(--main-color);
+}
+
+.info-post{
+    /* padding: 3.5%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-post_employer{
+    width: 35%;
+}
+
+.title-post-employer{
+    font-size: 130%;
+}
+
+.info-post_employer{
+    width: 60%;
+    padding: 0px 2%;
+    font-size: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    line-height: 175%;
+}
+
+.candidates-register,
+.candidates-chosen{
+    background: var(--element-main-color);
+    padding: 3.5%;
+}
+
+.candidates-register table,
+.candidates-chosen table{
+    width: 100%;
+}
+
+.title-candidate{
+    font-size: 120%;
+    color: var(--main-color);
+    margin-bottom: 3.5%;
+}
+
+.info-candidate{ 
+    overflow: auto;
+}
+
+.info-candidate th{ 
+    text-align: center;
+}
+
+.label-choose{
+    border: 2px dotted var(--red-color);
+    text-align: center;
+    font-size: 130%;
+    color: var(--red-color);
+    rotate: -25deg;
+}

@@ -1,0 +1,102 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--white-color);
+}
+
+.collapse {
+    height: 100%;
+}
+
+.navbar {
+    height: 55px;
+    font-size: 120%;
+    line-height: 55px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color) !important;
+}
+
+.container-fluid {
+    max-width: 1300px;
+    height: 100%;
+}
+
+.navbar-nav {
+    height: 100%;
+}
+
+.nav-item {
+    width: 12rem;
+    height: 100%;
+    line-height: 230%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item:hover {
+    background-color: var(--header-color) !important;
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: center;
+}
+
+.item-shadow {
+    background-color: var(--gray-color);
+}
+
+/* .hidden {
+    display: none;
+} */
+
+/* .body {
+    background-color: red;
+} */
+
+.table {
+    text-align: center;
+    /* max-width: 1300px; */
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+tr:hover {
+    background-color: var(--gray-color);
+    /* color: var(--white-color) !important; */
+}
+
+th {
+    background-color: var(--header-color) !important;
+    color: var(--white-color);
+}
+
+#action-post {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    /* background-color: var(--white-color) !important; */
+    /* justify-content: center; */
+}
+
+.btn-accept-post {
+    margin-top: 45px;
+}
+
+.btn-delete-post {
+    margin-top: 10px;
+}
+td {
+    vertical-align: middle;
+}
+
+.btn-update-job-seeker {
+    margin-right: 10px;
+    background-color: green;
+    color: var(--white-color);
+}
+
+.btn-delete-job-seeker {
+    background-color: red;
+    color: var(--white-color);
+}

@@ -1,0 +1,214 @@
+@media screen and (max-width: 1000px){
+    #navigation{
+        text-align: left;
+    }
+
+    .item-selected::after{
+        content: "";
+        border: 2px solid var(--white-color);
+        border-radius: 1px;
+        /* margin: 0px 67px; */
+        width: 73px;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+
+    .feature-detail li a::after{
+        content: "";
+        border: 2px solid var(--white-color);
+        border-radius: 1px;
+        margin: none;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .detail-notification{
+        left: -100%;
+    }
+
+    .list-company_search,
+    .list-company{
+        overflow:auto;
+    }
+
+    .post-container{
+        flex-direction: column;
+    }    
+
+    .main-post, 
+    .sub-post{
+        width: 100%;
+    }
+
+    .post-company{
+        flex-direction: column;
+    }
+
+    .recruit-job{
+        flex-direction: column;
+    }
+
+    .footer-info{
+        flex-direction: column;
+    }
+
+    /* Profile */
+    .menu-profile li a{
+        display: none;
+    }
+
+    .main-profile,
+    .menu-profile li:first-child{
+        display: block;
+    }
+    .navigation-profile,
+    .my-profile{
+        width: 100%;
+    }
+
+    .detail-profile>div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-profile>div>input{
+        width: 100%;
+    }
+
+    .btns{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btns .btn{
+        width: 94%;
+    }
+
+    .title-cv{
+        display: none;
+    }
+
+    .cv{
+        flex-direction: column;
+    }
+
+    .cv>div,
+    .cv>a{
+        width: 100%;
+    }
+
+    .img-cv{
+        text-align: center;
+        width: 50%;
+    }
+
+    #modal>div{
+        width: 90%;
+        left: 5%;
+
+    }
+
+    .modal-add_cv{
+        flex-direction: column;
+    }
+
+    .modal-view-cv{
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .modal-add_cv{
+        top: 10%;
+    }
+
+    /* Candidate */
+    .candidate-post{
+        flex-direction: column;
+    }
+
+    .container-candidate{
+        height: 550px;
+    }
+
+    .candidates{
+        width: 100%;
+    }
+
+    .tag-candidate{
+        flex-direction: column;
+    }
+
+    .img-candidate,
+    .info-candidate{
+        width: 100%;
+    }
+
+    /* Post employer */
+    .post{
+        width: 100%;
+    }
+
+    textarea{
+        columns: 50;
+    }
+
+    .info-post{
+        flex-direction: column;
+    }
+
+    .info-post_employer{
+        width: 100%;
+    }
+
+    .img-post_employer{
+        width: 100%;
+    }
+
+    .info-content,
+    .intro-address{
+        flex-direction: column;
+    }
+
+    .intro-address-company,
+    .img-intro-address,
+    .detail_info-conten,
+    .detail_info-content,
+    .logo-intro{
+        width: 100%;
+    }
+
+    /* .logo-intro, */
+    .logo-intro_img,
+    .img-intro_address_detail{
+        height: 90%;
+        aspect-ratio: 1/1;
+    }
+
+    .fields-company{
+        flex-direction: column;
+    }
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1000px){
+    .item-selected::after{
+        content: "";
+        border: 2px solid var(--white-color);
+        border-radius: 1px;
+        margin: 0px 67px;
+        width: 73px;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    
+    .feature-detail li a::after{
+        content: "";
+        border: 2px solid var(--white-color);
+        border-radius: 1px;
+        margin: 0px auto;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+}
